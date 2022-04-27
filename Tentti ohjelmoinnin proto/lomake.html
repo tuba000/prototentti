@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="javascriptlomake.js" type="text/javascript">
+    </script>
+    <title>Lomake</title>
+  </head>
+  <body>
+    <h1>Tervetuloa!</h1>
+    <p>Kurssi(t): </p>
+    <input type="checkbox" id="kurssi1" name="kurssi1" value="">
+
+    <label for="kurssi1">Ohjelmiston prototyyppi</label>
+    <input type="checkbox" id="kurssi2" name="kurssi2" value="">
+    <label for="kurssi2">Ohjelmiston tuotantoversio</label>
+    <input type="checkbox" id="kurssi3" name="kurssi3" value="">
+    <label for="kurssi3">Kehitysympäristön käyttö</label>
+    <p>Valitse ajankohta: </p>
+    <input type="radio" id="paiva1" name="paiva1" value="">
+    <label for="paiva1">26.04.2022</label>
+    <input type="radio" id="paiva2" name="paiva2" value="">
+    <label for="paiva2">26.08.2022</label>
+    <input type="radio" id="paiva3" name="paiva3" value="">
+    <label for="paiva3">18.12.2022</label>
+    <p>Mikä ohjelmointikieli: </p><select class="valinta" id="val" name="">
+      <option value="" selected></option>
+      <option value="js">JavaScript</option>
+      <option value="c">C#</option>
+    </select>
+    <p>Anna palautetta:</p>
+    <textarea name="teksti" id="teksti" rows="8" cols="80"></textarea><br>
+    <button type="button" name="button" onclick="tarkista()">Tarkista</button>
+  </body>
+</html>
